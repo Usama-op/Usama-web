@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammed Usama | Web Developer &amp; UI Designer</title>
+<meta name="description" content="Portfolio of Mohammed Usama, a B.Tech Information Technology student building responsive, practical web apps: ToolsHub, LioShare and Cipher.">
+<meta name="author" content="Mohammed Usama">
+<meta name="theme-color" content="#050304">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="__SITE_URL__">
+
+<!-- Social previews. __SITE_URL__ is replaced by scripts/set-site-url.mjs (see README). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mohammed Usama">
+<meta property="og:title" content="Mohammed Usama | Web Developer &amp; UI Designer">
+<meta property="og:description" content="Responsive, practical web apps built through real projects: ToolsHub, LioShare and Cipher.">
+<meta property="og:url" content="__SITE_URL__">
+<meta property="og:image" content="__SITE_URL__assets/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mohammed Usama in front of his name in large red and white lettering">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mohammed Usama | Web Developer &amp; UI Designer">
+<meta name="twitter:description" content="Responsive, practical web apps built through real projects: ToolsHub, LioShare and Cipher.">
+<meta name="twitter:image" content="__SITE_URL__assets/images/og-image.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preload" href="fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" media="(min-aspect-ratio: 23/20)"
+      imagesrcset="assets/images/hero-desktop-1280.avif 1280w, assets/images/hero-desktop-1920.avif 1920w, assets/images/hero-desktop-2560.avif 2560w" imagesizes="min(100vw, 2560px)">
+<link rel="preload" as="image" type="image/avif" media="(max-aspect-ratio: 23/20)"
+      imagesrcset="assets/images/hero-mobile-640.avif 640w, assets/images/hero-mobile-960.avif 960w, assets/images/hero-mobile-1280.avif 1280w" imagesizes="min(100vw, 960px)">
+
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammed Usama",
+  "jobTitle": "Web Developer and UI Designer",
+  "description": "B.Tech Information Technology student building responsive, practical web applications.",
+  "url": "__SITE_URL__",
+  "sameAs": ["https://github.com/Usama-op"]
+}
+</script>
+</head>
+<body>
+<!-- Scroll-driven background: a computer that comes apart as you scroll (built by js/background.js; pure decoration) -->
+<div class="bg" id="bg" aria-hidden="true">
+  <i class="bg__orb bg__orb--a"></i><i class="bg__orb bg__orb--b"></i>
+  <canvas class="bg__canvas" id="bg-canvas"></canvas>
+  <i class="bg__spot"></i>
+  <i class="bg__vignette"></i>
+</div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#home" aria-label="Mohammed Usama, back to top">
+    <img src="favicon.svg" width="30" height="30" alt="">
+  </a>
+  <nav class="nav__links" id="nav-links" aria-label="Primary">
+    <span class="nav__pill" id="nav-pill" aria-hidden="true"></span>
+    <a href="#home" data-link>Home</a>
+    <a href="#about" data-link>About</a>
+    <a href="#skills" data-link>Skills</a>
+    <a href="#projects" data-link>Projects</a>
+    <a href="#education" data-link>Education</a>
+    <a href="#github" data-link>GitHub</a>
+    <a href="#resume" data-link>Resume</a>
+    <a href="#contact" data-link>Contact</a>
+  </nav>
+  <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu" inert>
+  <nav aria-label="Mobile">
+    <a href="#home" data-mlink>Home</a>
+    <a href="#about" data-mlink>About</a>
+    <a href="#skills" data-mlink>Skills</a>
+    <a href="#projects" data-mlink>Projects</a>
+    <a href="#education" data-mlink>Education</a>
+    <a href="#github" data-mlink>GitHub</a>
+    <a href="#resume" data-mlink>Resume</a>
+    <a href="#contact" data-mlink>Contact</a>
+  </nav>
+</div>
+
+<main id="main">
+
+<!-- HOME -->
+<section class="hero" id="home" data-section aria-labelledby="hero-title">
+  <h1 class="sr-only" id="hero-title">Mohammed Usama, web developer and UI designer</h1>
+  <div class="hero__art" id="hero-art">
+    <picture>
+      <source media="(min-aspect-ratio: 23/20)" type="image/avif"
+              srcset="assets/images/hero-desktop-1280.avif 1280w, assets/images/hero-desktop-1920.avif 1920w, assets/images/hero-desktop-2560.avif 2560w" sizes="min(100vw, 2560px)">
+      <source media="(min-aspect-ratio: 23/20)" type="image/webp"
+              srcset="assets/images/hero-desktop-1280.webp 1280w, assets/images/hero-desktop-1920.webp 1920w, assets/images/hero-desktop-2560.webp 2560w" sizes="min(100vw, 2560px)">
+      <source type="image/avif"
+              srcset="assets/images/hero-mobile-640.avif 640w, assets/images/hero-mobile-960.avif 960w, assets/images/hero-mobile-1280.avif 1280w" sizes="min(100vw, 960px)">
+      <source type="image/webp"
+              srcset="assets/images/hero-mobile-640.webp 640w, assets/images/hero-mobile-960.webp 960w, assets/images/hero-mobile-1280.webp 1280w" sizes="min(100vw, 960px)">
+      <img src="assets/images/hero-mobile-960.webp" width="960" height="1286" fetchpriority="high" decoding="async"
+           alt="Mohammed Usama wearing a white cap and shirt, standing in front of his name in oversized red and white lettering inside a glowing red ring">
+    </picture>
+    <span class="hero__light" aria-hidden="true"><i></i></span>
+    <span class="hero__sweep" aria-hidden="true"></span>
+  </div>
+
+  <div class="hero__dock glass" data-light>
+    <div class="hero__copy">
+      <p class="hero__role">Web developer and UI designer</p>
+      <p class="hero__quote">I build responsive, practical, and user-focused web experiences through real-world projects.</p>
+    </div>
+    <div class="hero__cta">
+      <a class="btn btn--primary magnetic" href="#projects">View projects</a>
+      <a class="btn magnetic" href="#resume">Resume</a>
+      <a class="btn btn--ghost magnetic" href="https://github.com/Usama-op" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about" data-section aria-labelledby="about-title">
+  <div class="wrap about__grid">
+    <div class="about__text">
+      <h2 class="h2" id="about-title" data-reveal data-sheen>Beyond the code</h2>
+      <p class="lead" data-reveal>I'm a second-year B.Tech Information Technology student passionate about building modern web experiences.</p>
+      <p class="muted" data-reveal>I focus on web development and UI design, creating responsive and functional applications while continuously improving my programming skills.</p>
+    </div>
+    <dl class="facts glass" data-reveal data-light>
+      <div><dt>Focus</dt><dd>Web development and UI design</dd></div>
+      <div><dt>Study</dt><dd>B.Tech Information Technology</dd></div>
+      <div><dt>Approach</dt><dd>Real-world, hands-on projects</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills" id="skills" data-section aria-labelledby="skills-title">
+  <div class="wrap">
+    <h2 class="h2" id="skills-title" data-reveal data-sheen>Skills and technologies</h2>
+    <p class="lead" data-reveal>What I build with, grouped by how I use it.</p>
+    <p class="legend" data-reveal>
+      <span><i class="legend__bar legend__bar--full"></i>Used in my projects</span>
+      <span><i class="legend__bar legend__bar--half"></i>Currently learning</span>
+    </p>
+    <div class="skill-grid">
+      <article class="skill-card glass" data-reveal data-light>
+        <h3>Web development</h3>
+        <ul class="skill-list">
+          <li class="skill" data-state="used"><span class="skill__name">HTML</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+          <li class="skill" data-state="used"><span class="skill__name">CSS</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+          <li class="skill" data-state="used"><span class="skill__name">JavaScript</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+          <li class="skill" data-state="used"><span class="skill__name">Responsive web design</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+          <li class="skill" data-state="used"><span class="skill__name">Progressive Web Apps</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+        </ul>
+      </article>
+      <article class="skill-card glass" data-reveal data-light>
+        <h3>Browser APIs</h3>
+        <ul class="skill-list">
+          <li class="skill" data-state="used"><span class="skill__name">WebRTC</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+          <li class="skill" data-state="used"><span class="skill__name">Web Crypto API</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+        </ul>
+      </article>
+      <article class="skill-card glass" data-reveal data-light>
+        <h3>Programming languages</h3>
+        <ul class="skill-list">
+          <li class="skill" data-state="learning"><span class="skill__name">C</span><span class="skill__bar"><i></i></span><span class="sr-only">Currently learning</span></li>
+          <li class="skill" data-state="learning"><span class="skill__name">Python</span><span class="skill__bar"><i></i></span><span class="sr-only">Currently learning</span></li>
+        </ul>
+      </article>
+      <article class="skill-card glass" data-reveal data-light>
+        <h3>Tools</h3>
+        <ul class="skill-list">
+          <li class="skill" data-state="used"><span class="skill__name">Git</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+          <li class="skill" data-state="used"><span class="skill__name">GitHub</span><span class="skill__bar"><i></i></span><span class="sr-only">Used in my projects</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects" data-section aria-labelledby="projects-title">
+  <div class="wrap">
+    <h2 class="h2" id="projects-title" data-reveal data-sheen>Featured projects</h2>
+    <p class="lead" data-reveal>Three web apps I designed and built. Each one runs in the browser.</p>
+  </div>
+  <div class="wrap project-list" id="project-list"><!-- rendered by js/projects.js --></div>
+  <noscript><div class="wrap"><p class="muted">Projects need JavaScript to display. Find them on <a href="https://github.com/Usama-op">github.com/Usama-op</a>.</p></div></noscript>
+</section>
+
+<!-- EDUCATION -->
+<section class="section education" id="education" data-section aria-labelledby="edu-title">
+  <div class="wrap edu__grid">
+    <div>
+      <h2 class="h2" id="edu-title" data-reveal data-sheen>Education</h2>
+      <ol class="timeline" id="timeline">
+        <li class="timeline__item glass" data-reveal data-light>
+          <h3>B.Tech in Information Technology</h3>
+          <p class="timeline__meta">Second year</p>
+          <p class="muted">Building a base in programming, web technologies and problem solving.</p>
+        </li>
+        <!-- Add your college name and years here, for example:
+        <li class="timeline__item glass" data-light>
+          <h3>Course name</h3>
+          <p class="timeline__meta">College name, 20XX to 20XX</p>
+          <p class="muted">One sentence about it.</p>
+        </li>
+        -->
+      </ol>
+    </div>
+    <div>
+      <h2 class="h3" data-reveal data-sheen>Currently learning</h2>
+      <p class="muted" data-reveal>I'm strengthening my programming fundamentals and expanding my development skills.</p>
+      <ul class="learn" data-reveal>
+        <li class="glass" data-light><b>C</b><span>C programming</span></li>
+        <li class="glass" data-light><b>Py</b><span>Python</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB -->
+<section class="section github" id="github" data-section aria-labelledby="gh-title">
+  <div class="wrap">
+    <h2 class="h2" id="gh-title" data-reveal data-sheen>GitHub</h2>
+    <p class="lead" data-reveal>Public repositories from github.com/Usama-op.</p>
+    <div class="gh-stats" id="gh-stats" aria-live="polite"></div>
+    <div class="gh-repos" id="gh-repos"></div>
+    <p class="gh-cta"><a class="btn btn--primary magnetic" href="https://github.com/Usama-op" target="_blank" rel="noopener">Open github.com/Usama-op<span class="sr-only"> (opens in a new tab)</span></a></p>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section class="section resume" id="resume" data-section aria-labelledby="resume-title">
+  <div class="wrap">
+    <div class="resume__box glass glass--glow" data-reveal data-light>
+      <div class="resume__head">
+        <h2 class="h3" id="resume-title" data-sheen>Resume</h2>
+        <p class="muted">A quick overview of my education, skills and projects.</p>
+        <div class="resume__actions" id="resume-actions">
+          <a class="btn btn--primary magnetic" id="resume-download" href="assets/resume/Mohammed_Usama_Resume.pdf" download>Download PDF</a>
+          <a class="btn magnetic" id="resume-open" href="assets/resume/Mohammed_Usama_Resume.pdf" target="_blank" rel="noopener">Open in new tab<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+        <p class="resume__note" id="resume-note" role="status"></p>
+      </div>
+      <div class="resume__preview" id="resume-preview" hidden></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" data-section aria-labelledby="contact-title">
+  <div class="wrap contact__grid">
+    <div>
+      <h2 class="h2" id="contact-title" data-reveal data-sheen>Let's build something great</h2>
+      <p class="lead" data-reveal>Have a project, a collaboration idea, or just want to say hello?</p>
+      <ul class="contact__list" data-reveal>
+        <li><a class="glass" data-light href="mailto:uu2234456@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5zm1.7.2L12 12.4l7.3-5.7M4 18l5.6-6"/></svg>
+          <span><b>Email</b>uu2234456@gmail.com</span></a></li>
+        <li><a class="glass" data-light href="tel:+919030081903">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          <span><b>Phone</b>+91 90300 81903</span></a></li>
+        <li><a class="glass" data-light href="https://github.com/Usama-op" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.500m12 5v-3.500a3 3 0 0 0-.8-2.300c2.800-.3 5.800-1.400 5.800-6.200a4.800 4.800 0 0 0-1.300-3.300 4.500 4.500 0 0 0-.1-3.300s-1.100-.3-3.500 1.300a12 12 0 0 0-6.200 0C6.500 2.800 5.400 3.100 5.400 3.100a4.500 4.500 0 0 0-.1 3.300A4.800 4.800 0 0 0 4 9.700c0 4.800 3 5.900 5.800 6.200A3 3 0 0 0 9 18.200V22"/></svg>
+          <span><b>GitHub</b>github.com/Usama-op<span class="sr-only"> (opens in a new tab)</span></span></a></li>
+      </ul>
+    </div>
+    <form class="form glass" id="contact-form" novalidate data-reveal data-light>
+      <label for="f-name">Name</label>
+      <input id="f-name" type="text" name="name" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="e-name">
+      <small class="err" id="e-name" data-for="name"></small>
+
+      <label for="f-email">Email</label>
+      <input id="f-email" type="email" name="email" autocomplete="email" required maxlength="120" aria-describedby="e-email">
+      <small class="err" id="e-email" data-for="email"></small>
+
+      <label for="f-message">Message</label>
+      <textarea id="f-message" name="message" rows="5" required minlength="10" maxlength="2000" aria-describedby="e-message"></textarea>
+      <small class="err" id="e-message" data-for="message"></small>
+
+      <!-- Honeypot: real visitors never see or fill this -->
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+      <input type="hidden" name="form-name" value="contact">
+
+      <button class="btn btn--primary magnetic" type="submit" id="form-submit"><span id="form-submit-label">Send message</span></button>
+      <p class="form__note" id="form-note" role="status"></p>
+      <a class="form__alt" id="mail-alt" href="mailto:uu2234456@gmail.com" hidden>Open in your default mail app instead</a>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__row">
+    <div>
+      <p class="footer__name">Mohammed Usama</p>
+      <p class="muted">Web developer and UI designer</p>
+    </div>
+    <p class="footer__links">
+      <a href="https://github.com/Usama-op" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+      <a href="mailto:uu2234456@gmail.com">Email</a>
+      <a href="#resume">Resume</a>
+      <button type="button" class="linkbtn" id="swarm-btn">Replay swarm intro</button>
+    </p>
+    <p class="footer__copy">© 2026 Mohammed Usama. Swarm cursors adapted from <a href="https://github.com/DhvanilPatel/swarm-cursors" target="_blank" rel="noopener">Swarm Rebuild<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+  </div>
+</footer>
+
+<button class="totop glass" id="totop" type="button" aria-label="Back to top" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/scroll.js" defer></script>
+<script src="js/background.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/swarm-launch.js" defer></script>
+</body>
+</html>
